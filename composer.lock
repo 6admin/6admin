@@ -4,9 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b5a441ff01228740723836c0c70ef3e",
-    "content-hash": "b2d9d054c9b50e931d8270de6597ae10",
+    "hash": "d7eda90f1668d79c4d562b73c39e0b0c",
+    "content-hash": "ca898e061563bc0ba4c897d60c685f50",
     "packages": [
+        {
+            "name": "6admin/composer-installer",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/6admin/composer-installer.git",
+                "reference": "1f605bb02ec26009e348e373ac864506c4a6836b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/6admin/composer-installer/zipball/1f605bb02ec26009e348e373ac864506c4a6836b",
+                "reference": "1f605bb02ec26009e348e373ac864506c4a6836b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                },
+                {
+                    "name": "Anael Favre",
+                    "email": "anael.favre@gmail.com"
+                }
+            ],
+            "description": "Composer library installer for 6admin server manager",
+            "time": "2016-09-10 17:42:47"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -3532,9 +3583,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6.4"
