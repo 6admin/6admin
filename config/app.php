@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
 
-        //
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -225,6 +225,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Module' => Nwidart\Modules\Facades\Module::class,
     ],
 
 ];
