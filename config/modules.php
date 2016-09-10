@@ -140,10 +140,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => '6admin',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Anael Favre',
+            'email' => 'anael.favre@gmail.com',
         ],
     ],
     /*
