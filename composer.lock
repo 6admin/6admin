@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "6admin/composer-installer",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/6admin/composer-installer.git",
-                "reference": "1f605bb02ec26009e348e373ac864506c4a6836b"
+                "reference": "57073d84158cd23ca1164df935acc74704374b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/6admin/composer-installer/zipball/1f605bb02ec26009e348e373ac864506c4a6836b",
-                "reference": "1f605bb02ec26009e348e373ac864506c4a6836b",
+                "url": "https://api.github.com/repos/6admin/composer-installer/zipball/57073d84158cd23ca1164df935acc74704374b43",
+                "reference": "57073d84158cd23ca1164df935acc74704374b43",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 }
             ],
             "description": "Composer library installer for 6admin server manager",
-            "time": "2016-09-10 17:42:47"
+            "time": "2016-09-10 17:59:50"
         },
         {
             "name": "classpreloader/classpreloader",
