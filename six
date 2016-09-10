@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $# -eq 0 ]] ; then
-	php /opt/6admin/artisan # Stuff here
+	php /opt/6admin/artisan | grep six:
 else
-	php /opt/6admin/artisan "$@"
+	php /opt/6admin/artisan "six:$@"
 fi
