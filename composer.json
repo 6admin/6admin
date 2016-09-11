@@ -7,7 +7,7 @@
         "laravel/framework": "5.3.*",
         "nwidart/laravel-modules": "^1.13",
         "6admin/composer-installer": "~1.0",
-        "6admin/system": "dev-master",
+        "6admin/system": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
