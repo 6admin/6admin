@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7eda90f1668d79c4d562b73c39e0b0c",
-    "content-hash": "ca898e061563bc0ba4c897d60c685f50",
+    "hash": "dbd7eb13d990729a7cdcfb67da0416df",
+    "content-hash": "c7204aa9414324173ecc08a9832b0cb5",
     "packages": [
         {
             "name": "6admin/composer-installer",
@@ -57,6 +57,38 @@
             ],
             "description": "Composer library installer for 6admin server manager",
             "time": "2016-09-10 17:59:50"
+        },
+        {
+            "name": "6admin/system",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/6admin/system.git",
+                "reference": "d7099d8753f3a0e757bf4daf3e1ed2525847ebd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/6admin/system/zipball/d7099d8753f3a0e757bf4daf3e1ed2525847ebd8",
+                "reference": "d7099d8753f3a0e757bf4daf3e1ed2525847ebd8",
+                "shasum": ""
+            },
+            "require": {
+                "6admin/composer-installer": "~1.0"
+            },
+            "type": "six-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\System\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Anael Favre",
+                    "email": "anael.favre@gmail.com"
+                }
+            ],
+            "time": "2016-09-10 17:44:31"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -3584,7 +3616,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "6admin/system": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
