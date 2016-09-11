@@ -7,24 +7,24 @@ trait HasInputValidation
 {
     public function validate(array $datas)
     {
-        $validator = $this->buildValidator();
+        $validator = $this->buildValidator($datas);
 
         if ($validator->fails()) {
-            throw new Exceptions\ValidationException($validator->errors()->all());
+            throw new Exceptions\ValidationException(implode('. ', $validator->errors()->all()));
         }
 
         return true;
     }
 
-    protected function buildValidator()
+    protected function buildValidator(array $datas)
     {
         // Try to load the validation from repository attribute
         if(property_exists($this, 'validation') AND !empty($this->validation)) {
-            $validator = Validator::make($this->validation); 
+            $validator = Validator::make($datas, $this->validation); 
         }
         // Try to get the validator from method
         elseif(method_exists($this, 'getValidator')) { // TODO : Can we do more checks here ?
-            $validator = $this->getValidator();
+            $validator = $this->getValidator($datas);
         }
 
         if(!isset($validator)) {
