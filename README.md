@@ -17,15 +17,7 @@ Automated installation on fresh installation :
   * `create user {name} {--password=} {--home=} {--group=}`
   * `delete user {--files=}`
 
-## Philosophy
-
-The goal of this application is to bring you a **flexible** and **modular** admin tool for web service administration (like `nginx`, `apache`, `php`, `mysql`, `maria` ...). 6admin is suitable for personnal and small hosting services (maybe bigger in futures releases).
-
- * **Flexible** : You can change all default values and behaviours based on custom json files and config templates.
- * **Modular** : One simple module per service. You know Laravel and want to create your own module ? No problem !
- * **CLI Based** : All actions are built around a solid CLI interface.
-
-### Resource based CLI
+## CLI Structure
 
 With the resource approach (like REST), the CLI is easy to use and understand.
 
