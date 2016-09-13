@@ -62,7 +62,7 @@ return [
         |
         */
 
-        'modules' => base_path('modules'),
+        'modules' => base_path('../modules'),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
@@ -72,7 +72,7 @@ return [
         |
         */
 
-        'assets' => public_path('modules'),
+        'assets' => public_path('../modules'),
         /*
         |--------------------------------------------------------------------------
         | The migrations path
@@ -125,9 +125,10 @@ return [
     */
 
     'scan' => [
-        'enabled' => false,
+        'enabled' => true,
         'paths' => [
-            base_path('vendor/*/*'),
+            base_path('../modules/*'),
+            base_path('../services/*'),
         ],
     ],
     /*
