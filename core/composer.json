@@ -44,14 +44,14 @@
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize",
-            "for i in ./../services/*; do composer run-script post-install-cmd -d $i; done",
-            "for i in ./../modules/*; do composer run-script post-install-cmd -d $i; done"
+            "[ \"$(ls ./../services)\" ] && for i in ./../services/*; do composer run-script post-install-cmd -d $i; done",
+            "[ \"$(ls ./../modules)\" ] && for i in ./../modules/*; do composer run-script post-install-cmd -d $i; done"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize",
-            "for i in ./../services/*; do composer run-script post-update-cmd -d $i; done",
-            "for i in ./../modules/*; do composer run-script post-update-cmd -d $i; done"
+            "[ \"$(ls ./../services)\" ] && for i in ./../services/*; do composer run-script post-update-cmd -d $i; done",
+            "[ \"$(ls ./../modules)\" ] && for i in ./../modules/*; do composer run-script post-update-cmd -d $i; done"
         ]
     },
     "config": {
